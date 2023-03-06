@@ -64,6 +64,10 @@ section.program {
 	width: 599px;
 }
 
+section table td{
+	text-align: center;
+}
+
 article {
 	clear: both;
 	overflow: auto;
