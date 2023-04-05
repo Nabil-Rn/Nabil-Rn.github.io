@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>My website</title>
+        <style>
+            #background {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        transition: background-image 1s ease-in-out;
+        }
+            #crow2 {
+            float: right;
+            margin-right: 10px;
+        }
+        #crow1{
+            float: left;
+            margin-right: 10px;
+        }
+        </style>
+        <link rel="stylesheet" href="css/core.css">
+    </head>
+    <body>
+        <script onload="setInterval()" src="javascript/bg.js"></script>
+        <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow1"  ;>
+        <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow2" style="transform: scaleX(-1)" ;>
+        <div class="wrapper">
+            <header>
+                <h1>header</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="csharp.html">C#</a></li>
+                        <li><a href="javascript.html">javascript</a></li>
+                        <li><a href="unix.html">Unix</a></li>
+                        <li><a href="English.html">English</a></li>
+                     </ul>
+                </nav>
+            </header>
+            
+            <section class="program" style="background-color: rgb(221, 4, 185);">
+                <article >
+                    <figure>
+                        <img src="image/gamebg.png" alt="me, haha">
+                        <figcaption>spooky college</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h3>About the game</h3> 
+                        <p>
+                            At Vanier College, there's an English class 
+                            dedicated to Gothic literature, rumored to be haunted 
+                            by strange occurrences. Many students and faculty members 
+                            wonder why the class is located in the basement, as if 
+                            it's descending into a deeper,darker realm of the unknown.
+                         </p>
+                    </hgroup> 
+                </article>
+                <article >
+                    <hgroup>
+                        <h2>Play as the student</h2> <br>
+                        <h3>Solve the mysteries and survive death</h3>
+                        <p>
+                            ~ Vampires, Demons and ghosts ~ 
+                         </p>
+                    </hgroup> 
+                    <figure>
+                        <img src="image/chillin.gif" alt="me, haha">
+                        <figcaption>he is chillin tho</figcaption>
+                    </figure>
+                </article>
+                <article >
+                    <hgroup>
+                        <!-- <div id="mindmap">
+                            <div id="life" onclick="changeScene('l')">Life</div>
+                            <div id="death" onclick="changeScene('d')">Death</div>
+                        </div> -->
+                        <script>
+                            // function changeScene() {
+                            //     document.getElementById('mindmap').classList.toggle(option);
+                            // }
+                        </script><br><br>
+                    </hgroup> 
+                </article>
+                
+            </section>
+
+            <footer>Nabil's website thingy</footer>
+        </div>
+    </body>
+</html>

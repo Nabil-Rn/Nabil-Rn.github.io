@@ -48,7 +48,7 @@ nav ul {
 
 nav li {
 	display: inline;
-	margin-right: 40px;
+	margin-right: 30px;
 }
 
 nav li a {
@@ -140,4 +140,35 @@ aside h2 {
 footer {
 	font-size: 80%;
 	padding: 3px 0px 0px 20px;
+}
+
+#mindmap {
+	position: relative;
+	height: 50vh;
+}
+#life, #death {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #00ff00;
+	color: #000;
+	text-align: center;
+	line-height: 100px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#life {
+	left: 30%;
+}
+
+#death {
+	left: 70%;
+	background-color: #ff0000;
+}
+.dark{
+	background-color: #050204;
 }
