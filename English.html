@@ -4,28 +4,14 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>My website</title>
-        <style>
-            #background {
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        transition: background-image 1s ease-in-out;
-        }
-            #crow2 {
-            float: right;
-            margin-right: 10px;
-        }
-        #crow1{
-            float: left;
-            margin-right: 10px;
-        }
-        </style>
+        <link rel="shortcut icon" href="image/dolphinlogo.png" />
+        <link rel="stylesheet" href="css/english.css">
         <link rel="stylesheet" href="css/core.css">
     </head>
     <body>
-        <script onload="setInterval()" src="javascript/bg.js"></script>
-        <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow1"  ;>
-        <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow2" style="transform: scaleX(-1)" ;>
+        <!-- <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow1"  ;>
+        <img src="image/chillin.gif" alt="Animated GIF" width="100" height="90" id="crow2" style="transform: scaleX(-1)" ;> -->
+        <audio id="bgmusic"></audio>     
         <div class="wrapper">
             <header>
                 <h1>header</h1>
@@ -42,7 +28,7 @@
                 </nav>
             </header>
             
-            <section class="program" style="background-color: rgb(221, 4, 185);">
+            <section class="program">
                 <article >
                     <figure>
                         <img src="image/gamebg.png" alt="me, haha">
@@ -68,26 +54,17 @@
                          </p>
                     </hgroup> 
                     <figure>
-                        <img src="image/chillin.gif" alt="me, haha">
-                        <figcaption>he is chillin tho</figcaption>
+                        <img src="image/chillin.gif" alt="KRAW!">
                     </figure>
                 </article>
                 <article >
-                    <hgroup>
-                        <!-- <div id="mindmap">
-                            <div id="life" onclick="changeScene('l')">Life</div>
-                            <div id="death" onclick="changeScene('d')">Death</div>
-                        </div> -->
-                        <script>
-                            // function changeScene() {
-                            //     document.getElementById('mindmap').classList.toggle(option);
-                            // }
-                        </script><br><br>
-                    </hgroup> 
+                    <br>
+                    <img id="image" src="image/GameScenes/scene0.png">
+                   <br>
                 </article>
                 
             </section>
-
+            <script onload="action();" src="javascript/bg.js"></script>
             <footer>Nabil's website thingy</footer>
         </div>
     </body>
