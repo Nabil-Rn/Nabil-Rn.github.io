@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>My website</title>
+        <link rel="shortcut icon" href="image/dolphinlogo.png" />
+        <link rel="stylesheet" href="css/core.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <img src="https://img.freepik.com/free-vector/development-typographic-header-presenting-content-web-pages-website-layout-composition-color-development-idea-computer-technology-flat-vector-illustration_613284-2493.jpg" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="https://youtu.be/dQw4w9WgXcQ?si=YLYc2qc16ZXm5agn">Home</a></li>
+                        <li><a href="https://youtu.be/vdo7o4K2gN4?si=CXYllx3zvbWIS-lK">HTML</a></li>
+                        <li><a href="https://youtu.be/8edwRHnDrxI?si=PRK_XI92UW_MLiW0">CSS</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=8edwRHnDrxI">JS</a></li>
+                        <li><a href="https://youtu.be/M5V_IXMewl4?si=lYaXVLuYbim0Zasv">PHP</a></li>
+                        <li><a href="https://youtu.be/Q9DtwYf5ISg?si=5LCwC_JgQu-VxIAy">jQuery</a></li>
+                        <li><a href="https://youtu.be/YAgJ9XugGBo?si=d7K2RcwAaomkFME4">three.js</a></li>
+                        <li><a href="https://www.reddit.com/r/ProgrammerHumor/comments/ru91uz/react/">React</a></li>
+                        <li><a href="https://www.reddit.com/r/ProgrammerHumor/">Meme</a></li>
+                     </ul>
+                </nav>
+            </header>
+            <section class="program">
+                <article >
+                    <figure>
+                        <img src="https://i.redd.it/nxif1rllu9981.jpg" height="220">
+                    </figure>
+                    <hgroup>
+                        <h2>website!</h2> <br/>
+
+                        <p>
+                            Erm...
+                            aaa
+                        </p>
+                        <button id="erm">Erm...</button>
+                    </hgroup>
+                </article>
+
+                <article >
+                    <figure>
+                        <img src="https://i.redd.it/nxif1rllu9981.jpg" height="220" id="js">
+                    </figure>
+                    <hgroup>
+                        <h2>do you love JS?</h2> <br/>
+                        <button id="ew">yes!</button>
+                        <button id="ok">NO!</button>
+                    </hgroup>
+                </article>
+            </section>
+            <footer>Nabil's website thingy</footer>
+        </div>
+
+        <script>
+            // Define a JavaScript function that will be called when the button is clicked
+            function erm() {
+                alert("erm?");
+                alert("erm!");
+            }
+            function ew() {
+                alert("Cringe detected!");
+                var img = document.getElementById("js");
+                img.src = "https://i.kym-cdn.com/entries/icons/mobile/000/038/030/diesfromcringe.jpg";
+                img.height = 1000;
+                document.body.appendChild(img);
+                img.scrollIntoView({ behavior: "smooth" });
+                setTimeout(cringe, 100);
+            }
+            function cringe(){
+                window.location.href = "https://www.youtube.com/watch?v=8edwRHnDrxI";
+            }
+            function ok() {
+                alert("Based!");
+            }
+            var button1 = document.getElementById("erm");
+            var button2 = document.getElementById("ew");
+            var button3 = document.getElementById("ok");
+            button1.addEventListener("click", erm);
+            button2.addEventListener("click", ew);
+            button3.addEventListener("click", ok);
+</script>
+    </body>
+</html>

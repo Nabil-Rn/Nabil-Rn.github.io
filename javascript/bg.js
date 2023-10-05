@@ -5,8 +5,7 @@
     'image/Spookybackground1.jpg',
     'image/Spookybackground2.jpg'
   ];
-  
-  // music 
+  // music
   var bgmusic = document.getElementById("bgmusic");
 
 
@@ -23,9 +22,8 @@
     return `url('${backgrounds[randomIndex]}')`;
 
   }
-  
+
 // Set the background image every 60 seconds
-  
 
 // The Game
 
@@ -52,13 +50,48 @@ document.addEventListener("keydown", event => {
   } else if (event.code === "ArrowRight") {
     index++;
   }
-  
+
   if (index < 0) {
     index = images.length - 1;
   } else if (index >= images.length) {
     index = 0;
   }
-  
+
+  if(index == 7){
+    bgmusic.pause();
+    bgmusic.src = "music/scary.mp3";
+    bgmusic.play();
+  }
+
+  if(index == 12 || index == 1 ){
+    bgmusic.pause();
+    bgmusic.src = "music/bgm.mp3";
+    bgmusic.play();
+  }
+
+  document.getElementById("image").src = images[index];
+});
+
+
+const image = document.getElementById("image");
+
+image.addEventListener("touchstart", event => {
+  const touchX = event.touches[0].clientX;
+  const screenWidth = window.innerWidth;
+  const threshold = screenWidth / 2;
+
+  if (touchX < threshold) {
+    index--;
+  } else {
+    index++;
+  }
+
+  if (index < 0) {
+    index = images.length - 1;
+  } else if (index >= images.length) {
+    index = 0;
+  }
+
   if(index == 7){
     bgmusic.pause();
     bgmusic.src = "music/scary.mp3";
